@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Winports</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Winports envíos en línea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Envíos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rastrear envío</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--logo-->
+    <center><img src="img/logo.png" class="d-block w-10" alt="..."></center>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Envía tus paquetes con nosotros</h1>
+            <p class="lead">Nuestra plataforma de envíos en línea te permite enviar y rastrear tus paquetes de manera
+                fácil y conveniente.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Comienza ahora</a>
+        </div>
+    </div>
+
+    <!-- Sección de servicios -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Envíos nacionales e internacionales</h5>
+                        <p class="card-text">Ofrecemos envíos nacionales e internacionales con tarifas competitivas y
+                            tiempos de entrega rápidos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Rastreo en línea</h5>
+                        <p class="card-text">Nuestro sistema de rastreo en línea te permite conocer la ubicación y el
+                            estado de tus paquetes en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Envíos seguros y confiables</h5>
+                        <p class="card-text">Nos aseguramos de que tus paquetes se entreguen de manera segura y
+                            confiable, con nuestro sistema de guías de envío y seguimiento en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Sección de formulario de envío -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Envía tu paquete con nosotros</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="direccion">Dirección de origen</label>
+                    <input type="text" class="form-control" id="direccion">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="destino">Dirección de destino</label>
+                    <input type="text" class="form-control" id="destino">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" class="form-control" id="peso">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dimensiones">Dimensiones (cm)</label>
+                    <input type="text" class="form-control" id="dimensiones">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tipo-envio">Tipo de envío</label>
+                    <select id="tipo-envio" class="form-control">
+                        <option selected>Selecciona un tipo de envío...</option>
+                        <option>Envío estándar</option>
+                        <option>Envío express</option>
+                        <option>Envío internacional</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar paquete</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 WilfredoAR22. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-right">
+                        <li class="list-inline-item"><a href="#">Inicio</a></li>
+                        <li class="list-inline-item"><a href="#">Envíos</a></li>
+                        <li class="list-inline-item"><a href="#">Rastrear envío</a></li>
+                        <li class="list-inline-item"><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
