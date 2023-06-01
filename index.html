@@ -8,13 +8,69 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            /*background: linear-gradient(45deg,#131313,#2B2B2B,#86868B,#1561F0);*/
+            background: linear-gradient(45deg,#4DBDEB,#FFFFFF,#DFEEEE,#174D4D);
+            /*background: linear-gradient(45deg,#000000,#FF6D09,#979797,#FFFFFF);*/
+            background-size: 400% 400%;
+            position: relative;
+            animation: cambiar 10s ease infinite;
+        }
+        @keyframes cambiar {
+            0% {background-position: 0 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0 50%;}
+        }
+
+        .container {
+             margin-bottom: 150x;
+            }
+            h2 {
+                color: #4DBDEB;
+            }
+ 
+        .card-title 
+       {
+            color: rgb(255, 187, 0);
+        }
+        
+        .card-text 
+        {
+            color: rgb(0, 13, 129);
+        }
+        
+        .card-img-top
+        {
+        width: 400px;
+        height: 200px;
+        }
+
+        form label {
+            color: rgb(255, 187, 0);
+        }
+
+        .btn-primary {
+            color: rgb(255, 255, 255);
+        }
+      </style>
+        
+      
+      
 </head>
 
 <body>
-
+   <section>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Diaco envíos en línea</a>
+        <a class="navbar-brand" href="#">Diaco quejas en línea</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,51 +97,49 @@
     <center><img src="img/logo1.png" class="d-block w-10" alt="..."></center>
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Envía tus quejas con nosotros</h1>
-            <p class="lead">Nuestra plataforma de envíos de que quejas en línea te permite
-                             enviar tus comentarios anonimos a nuestra empresa central.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Comienza ahora</a>
+            <p style="font-size: 50px" class="text-warning">Envía tus quejas con nosotros</p>
+            <p style="font-size: 25px" class="text-info">Nuestra plataforma de envíos de quejas en línea te permite enviar tus comentarios anonimos a nuestra empresa central.</p>
+            <a class="btn btn-primary btn-lg" href="index.html" button">Comienza ahora</a>
         </div>
-    </div>
 
     <!-- Sección de servicios -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Envíos nacionales e internacionales</h5>
-                        <p class="card-text">Ofrecemos envíos nacionales e internacionales con tarifas competitivas y
-                            tiempos de entrega rápidos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Rastreo en línea</h5>
-                        <p class="card-text">Nuestro sistema de rastreo en línea te permite conocer la ubicación y el
-                            estado de tus paquetes en tiempo real.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Envíos seguros y confiables</h5>
-                        <p class="card-text">Nos aseguramos de que tus paquetes se entreguen de manera segura y
-                            confiable, con nuestro sistema de guías de envío y seguimiento en tiempo real.</p>
-                    </div>
-                </div>
-            </div>
+    <p>     </p>
+    <div class="card-group">
+        <div class="card">
+            <img src="img/1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Recepción y gestión de quejas</h5>
+            <p class="card-text">Los consumidores pueden presentar quejas sobre productos defectuosos, servicios insatisfactorios, publicidad engañosa, prácticas comerciales injustas, entre otros problemas.</p>
+          </div>
         </div>
-
+        <div class="card">
+            <img src="img/3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Información sobre derechos del consumidor</h5>
+            <p class="card-text">La DIACO puede proporcionar información detallada sobre los derechos del consumidor en diferentes áreas, como compras en línea, contratos de servicios, garantías de productos, protección de datos personales y más.</p>
+        </div>
+        </div>
+        <div class="card">
+            <img src="img/4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Inspecciones y controles de calidad</h5>
+              <p class="card-text">La DIACO puede llevar a cabo inspecciones y controles de calidad en productos y servicios para garantizar que cumplan con los estándares y regulaciones establecidos.</p>
+            </div>
+          </div>
+        <div class="card">
+            <img src="img/5.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Educación y concientización del consumidor</h5>
+            <p class="card-text">La DIACO puede llevar a cabo programas de educación y campañas de concientización para informar a los consumidores sobre sus derechos, responsabilidades y buenas prácticas de consumo. </p>
+          </div>
+        </div>
     </div>
-    <!-- Sección de formulario de envío -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Envía tu paquete con nosotros</h2>
+    <p>         </p>
+<!-- Sección de formulario de envío -->
+<p>         </p>    
+<div class="container mt-5">
+        <h2 class="text-center mb-2">Formulario de quejas</h2>
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -99,40 +153,47 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="direccion">Dirección de origen</label>
+                    <label for="negocio">Nombre del negocio:</label>
+                    <input type="text" class="form-control" id="negocio">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="direccion">Dirección:</label>
                     <input type="text" class="form-control" id="direccion">
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="destino">Dirección de destino</label>
-                    <input type="text" class="form-control" id="destino">
-                </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="peso">Peso (kg)</label>
-                    <input type="number" class="form-control" id="peso">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="dimensiones">Dimensiones (cm)</label>
-                    <input type="text" class="form-control" id="dimensiones">
-                </div>
+            <div class="form-group col-md-6">
+                <label for="fecha">Fecha:</label>
+                <input type="datetime-local" class="form-control" id="fecha">
             </div>
+            <div class="form-group col-md-6">
+                    <label for="telefono">Numero Telefono:</label>
+                    <input type="int" class="form-control" id="telefono">
+                </div>
+                </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="tipo-envio">Tipo de envío</label>
-                    <select id="tipo-envio" class="form-control">
-                        <option selected>Selecciona un tipo de envío...</option>
-                        <option>Envío estándar</option>
-                        <option>Envío express</option>
-                        <option>Envío internacional</option>
+                    <label for="tipo-queja">Tipo de queja</label>
+                    <select id="tipo-queja" class="form-control">
+                        <option selected>Selecciona un tipo de queja...</option>
+                        <option>Servicio al cliente deficiente</option>
+                        <option>Productos defectuosos o de mala calidad</option>
+                        <option>Publicidad engañosa</option>
+                        <option>Incumplimiento de garantias</option>
+                        <option>Cobros indebidos o excesivos</option>
+                        <option>Incumplimiento de contratos</option>
+                        <option>Negligencia o daños</option>
+                        <option>Problemas de seguridad</option>
+                        <option>Problemas de higiene</option>
+                        <option>Practicas comerciales deshonestas</option>
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="comentarios">Comentarios</label>
-                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    <label for="comentario">Comentario</label>
+                    <textarea class="form-control" id="comentario" rows="3"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar paquete</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
         </form>
     </div>
     <!-- Footer -->
@@ -153,4 +214,5 @@
             </div>
         </div>
     </footer>
+   </section>
 </body>
