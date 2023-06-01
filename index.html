@@ -10,24 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
-<body>
-    <!--se creo esta accion para la conexion-->
-        <!--faltan mas cosas-->
-
-    <form action="conexion.php" method="post">
-     <!--elementos del formulario-->
-     <input type="texto" name="nombre" placeholder="Nombre">
-     <input type="email" name="correo" placeholder="Correo">
-     <input type="texto" name="comercio" placeholder="Comercio">
-     <button type="darle">Enviar</button>
-
-    </form>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Diaco envíos en línea</a>
 
-       /* <a class="btn"href="/index2.html"><button></button></a>*/
+       <!--<a class="btn"href="/index2.html"><button></button></a>-->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="falsegit" aria-label="Toggle navigation">
@@ -100,35 +87,30 @@
     <!-- Sección de formulario de envío -->
     <div class="container mt-5">
         <h2 class="text-center mb-4">Envía tus quejas con nosotros</h2>
-        <form>
+        <!--se añadio  este code: action="conexion.php" method="post" al <form action-->
+        <form   action="conexion.php" method="post">
+
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" class="form-control" id="nombre">
+                    <label for="nombre">Nombre Comercio</label>
+                    <input type="text" class="form-control" id="nombrecomercio">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" class="form-control" id="correo">
+                    <label for="Propietario">Propietario</label>
+                    <input type="text" class="form-control" id="Propietario">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="direccion">Dirección de origen</label>
-                    <input type="text" class="form-control" id="direccion">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="destino">Dirección de destino</label>
-                    <input type="text" class="form-control" id="destino">
+                    <label for="Departamento">Departamento</label>
+                    <input type="text" class="form-control" id="Departamento">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="peso">Peso (kg)</label>
-                    <input type="number" class="form-control" id="peso">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="dimensiones">Dimensiones (cm)</label>
-                    <input type="text" class="form-control" id="dimensiones">
+                    <label for="Municipio">Municipio</label>
+                    <input type="text" class="form-control" id="Municipio">
+
                 </div>
             </div>
             <div class="form-row">
@@ -138,15 +120,15 @@
                         <option selected>Selecciona un tipo de envío...</option>
                         <option>Envío estándar</option>
                         <option>Envío express</option>
-                        <option>Envío internacional</option>
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="comentarios">Comentarios</label>
-                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    <label for="comentarios">Escribe su Queja</label>
+                    <textarea class="form-control" id="comentarios" rows="5"></textarea>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar queja</button>
+            
         </form>
     </div>
     <!-- Footer -->

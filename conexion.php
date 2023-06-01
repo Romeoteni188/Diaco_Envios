@@ -1,18 +1,31 @@
 <?php
-$servername = "LAPTOP-SN1NKNDJ";
-$database = "BD2";
-$username = "romeo188";
-$password = "romeo188+";
 
-//Crear conexión
-$conn = new mysqli($servername, $username, $password, $database);
+class conexión
+{
 
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
+    function ConexionDB()
+    {
+        $servername = "LAPTOP-SN1NKNDJ";
+        $database = "BD2";
+        $username = "romeo188";
+        $password = "romeo188+";
+        $puerto = 1433;
+        try {
+            $conn = new PDO("sqlrv:Server=$servername,$puerto;DataBase=$database", $username, $password);
+            echo "se conecto a la base datos";
+        } catch (PDOException $exp) {
+            echo "No se logro conectar a la base de datos correctamente: $database, erro: $exp";
+        }
+        return $conn;
+
+
+    }
+
+
+
+
 }
 
-// Aquí puedes realizar consultas a la base de datos si es necesario
 
 ?>
 
@@ -21,7 +34,10 @@ if ($conn->connect_error) {
 <?php
 // Obtener los valores enviados desde el formulario
 $nombre = $_POST['nombre'];
-$correo = $_POST['correo'];
+$propieta= $_POST['correo'];
+$departamento
+$municipio
+$queja
 // Resto de los campos de formulario
 
 // Realizar acciones con los datos, como guardarlos en la base de datos
